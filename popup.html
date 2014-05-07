@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Personal Text to Speech Tool</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/all.css"/>
+
+  </head>
+  <body style="margin:0px;padding:4px;overflow:hidden">
+    <div id="main-container">
+      <div class="main">
+        <div style="position:relative; top:6px; left: 10px;">
+          <input type="text" placeholder="Texts to speak"/><br/>
+        </div>
+        <div style="margin-top: 20px;">
+          <input type = "radio" name = "gender" id="male_gender" checked="checked" value="male"/>
+          <label for = "male_gender">Male</label>
+          <input type = "radio" name = "gender" id="female_gender" value="female"/>
+          <label for = "female_gender">Female</label>
+        </div>
+        <select id="pick_voice">
+
+        </select>
+      </div>
+      <div class="bottom">
+        <button id="speak"><span>Speak</span></button>
+      </div>
+    </div>
+    <script data-main="js/main" src="js/lib/require.min.js"></script> 
+  </body>
+</html>
